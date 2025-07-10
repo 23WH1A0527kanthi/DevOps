@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carnival Fun Fair Registration</title>
+  <style>
+    body {
+      background: url('image3.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: yellow;
+      text-shadow: 2px 2px #004aad;
+      margin-bottom: 10px;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 25px;
+      border-radius: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 0 20px rgba(0, 74, 173, 0.4);
+      height: 90vh;
+      overflow-y: auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #004aad;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 2px solid #87cefa;
+      border-radius: 10px;
+      font-size: 1rem;
+      background-color: #f0f8ff;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    input[type="file"] {
+      border: none;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      color: #1e90ff;
+      border-bottom: 2px dashed #87cefa;
+    }
+
+    .radio-group {
+      margin-top: 5px;
+    }
+
+    .radio-group label {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 15px 30px;
+      background-color: #1e90ff;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #004aad;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎪 Carnival - A Fun Fair Registration 🎉</h1>
+  <form class="form-container">
+    <div class="section-title">Participant Info</div>
+    <label>Full Name</label>
+    <input type="text" required />
+
+    <label>Nickname / Fun Alias</label>
+    <input type="text" />
+
+    <label>Age</label>
+    <input type="number" />
+
+    <label>Gender</label>
+    <div class="radio-group">
+      <label><input type="radio" name="gender" /> Male</label>
+      <label><input type="radio" name="gender" /> Female</label>
+      <label><input type="radio" name="gender" /> Other</label>
+    </div>
+
+    <label>Email Address</label>
+    <input type="email" required />
+
+    <label>Mobile Number</label>
+    <input type="tel" required />
+
+    <label>Alternate Contact Number</label>
+    <input type="tel" />
+
+    <label>Address (City, State)</label>
+    <input type="text" />
+
+    <label>Emergency Contact Name</label>
+    <input type="text" />
+
+    <label>Emergency Contact Phone</label>
+    <input type="tel" />
+
+    <div class="section-title">Participation Details</div>
+    <label>Are You Attending As:</label>
+    <select>
+      <option>Individual</option>
+      <option>Family</option>
+      <option>Vendor/Booth Owner</option>
+      <option>Performer</option>
+      <option>Volunteer</option>
+    </select>
+
+    <label>Total Number of People in Your Group</label>
+    <input type="number" />
+
+    <label>Are You Bringing Kids?</label>
+    <input type="text" placeholder="Yes - 2 kids (ages 5 and 8)" />
+
+    <label>Preferred Entry Time Slot</label>
+    <select>
+      <option>Morning</option>
+      <option>Afternoon</option>
+      <option>Evening</option>
+    </select>
+
+    <div class="section-title">Activity & Games</div>
+    <label>Favorite Carnival Activity</label>
+    <select>
+      <option>Ring Toss</option>
+      <option>Face Paint</option>
+      <option>Talent Show</option>
+      <option>Pie-Eating Contest</option>
+      <option>Bouncy Castle</option>
+      <option>Fortune Teller</option>
+    </select>
+
+    <label>Interested In:</label><br>
+    <label><input type="checkbox" /> Costume Contest</label>
+    <label><input type="checkbox" /> Talent Show</label>
+    <label><input type="checkbox" /> Tug of War</label>
+    <label><input type="checkbox" /> Raffle Draw</label>
+    <label><input type="checkbox" /> Carnival Parade</label>
+
+    <label>Do You Want to Host or Run a Booth?</label>
+    <select>
+      <option>No</option>
+      <option>Yes</option>
+    </select>
+
+    <label>Name of Booth (if applicable)</label>
+    <input type="text" />
+
+    <label>Type of Booth</label>
+    <select>
+      <option>None</option>
+      <option>Food</option>
+      <option>Games</option>
+      <option>Art & Crafts</option>
+      <option>Merchandise</option>
+      <option>Informational</option>
+    </select>
+
+    <div class="section-title">Fun Stuff</div>
+    <label>Favorite Carnival Treat</label>
+    <select>
+      <option>Cotton Candy</option>
+      <option>Popcorn</option>
+      <option>Candy Apple</option>
+      <option>Ice Cream</option>
+    </select>
+
+    <label>T-shirt Size</label>
+    <select>
+      <option>XS</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+    </select>
+
+    <label>Select T-Shirt Accessories:</label><br>
+    <label><input type="checkbox" /> Glow Bands</label>
+    <label><input type="checkbox" /> Fun Hat</label>
+    <label><input type="checkbox" /> Button Badge</label>
+
+    <label>Upload a Fun Photo or Meme</label>
+    <input type="file" />
+
+    <label>Pick a Carnival Emoji Badge</label>
+    <select>
+      <option>🎡</option>
+      <option>🎠</option>
+      <option>🎪</option>
+      <option>🤹</option>
+      <option>🎟️</option>
+    </select>
+
+    <label>Share a Fun Fact or Memory</label>
+    <input type="text" />
+
+    <label>Any Special Requests or Suggestions?</label>
+    <textarea placeholder="Your message..."></textarea>
+
+    <div class="section-title">Consent</div>
+    <label>Do You Give Permission for Photos/Videos?</label>
+    <select>
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+
+    <label><input type="checkbox" required /> I agree to the safety rules and terms & conditions.</label>
+
+    <button type="submit">🎟️ Submit Registration</button>
+  </form>
+</body>
+</html>
