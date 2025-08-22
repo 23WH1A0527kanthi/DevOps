@@ -9,7 +9,7 @@ pipeline{
     stage('run command'){
       steps{
         echo "running in jenkins"
-        ]
+        }
       }
     }
   }
